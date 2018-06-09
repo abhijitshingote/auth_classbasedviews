@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Authorization List</h2>
+{% for object in object_list %}
+<!-- <a href="{% url 'auth_detail' object.pk %} ">{{object.authorizationid}}</a> -->
+<a href="{{object.get_absolute_url}}">{{object.authorizationid}}</a>
+
+
+{{object.createdate}}
+{% endfor %}
+</body>
+</html>

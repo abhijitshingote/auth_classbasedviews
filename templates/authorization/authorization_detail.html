@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2>Authorization Details</h2>
+
+{{object.authorizationid}}
+{{object.memberid}}
+{{object.createdate}}
+{{object.updatedate}}
+{{object.createdby}}
+{{object.updatedby}}
+<a href="{% url 'auth_update' object.pk %}">edit</a>
+</body>
+</html>
